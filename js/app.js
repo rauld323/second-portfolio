@@ -84,3 +84,22 @@ gsap.to('.tech-box',{
 	duration: 1,
 	y: -200
 })
+
+gsap.to('.paralax-info ', {
+	scrollTrigger: {
+		trigger: '.paralax-info',
+		toggleActions: "restart pause reverse pause",
+		scrub: true
+	},
+	duration: 3,
+	y: -150
+})
+gsap.to('.paralax-info-right ', {
+	scrollTrigger: {
+		trigger: '.paralax-info-right',
+		toggleActions: "restart pause reverse pause",
+		scrub: true
+	},
+	duration: 3,
+	y: -150
+})
