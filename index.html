@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
 	<div id="myNav" class="overlay">
 		<div>
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -22,7 +23,7 @@
 			<div class="overlay-content">
 				<a href="#about-me">About</a>
 				<a href="#projects">Projects</a>
-				<a href="#">Contact</a>
+				<a href="#contact">Contact</a>
 			</div>
 			<div class="overlay-info">
 				<h3>Location: Sidelfigin, Deutshland(Germany)</h3>
@@ -48,9 +49,10 @@
 
 	<section>
 		<div class="icon-bar">
-			<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-			<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+			<a href="https://github.com/rauld323" class="github" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.instagram.com/raul_davila_c/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+			<a href="https://twitter.com/raulisonthelist" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.linkedin.com/in/raul-davila-campos-2019/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
 		</div>
 	</section>
 
@@ -141,6 +143,33 @@
 		</section>
 
 
+			<div id="contactForm" class="overlay-contact">
+
+				<a href="javascript:void(0)" class="closebtn-contact" onclick="closeContact()">X</a>
+
+
+				<!-- Overlay content -->
+				<div class="overlay-form-content">
+					<form action="https://formspree.io/rauldavila323@gmail.com" method="POST" class="form-section">
+						<!-- <input type="hidden" name="_next" value="https://raul-portfolio.firebaseapp.com/index.html" /> -->
+						<div class="input-sections">
+							<input type="text" name="name" required placeholder="Name"><br><br>
+							<input type="email" name="email" required placeholder="Email"><br><br>
+							<input style="margin-bottom: 15px;" type="text" required placeholder="Subject">
+						</div>
+							<textarea style="outline: none;"
+							name="textarea" id="" cols="40" rows="10" required placeholder="What's the Beef?">
+							</textarea>
+						<button class="submit" type="submit" value="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+
+
+			<!-- Use any element to open/show the overlay navigation menu -->
+			<span id="contact" onclick="openContact()">
+				<button>Cool</button>
+			</span>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 	<script src="node_modules/gsap/dist/gsap.js"></script>

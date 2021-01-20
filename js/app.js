@@ -103,3 +103,13 @@ gsap.to('.paralax-info-right ', {
 	duration: 3,
 	y: -150
 })
+
+// Contact Form Menu
+function openContact() {
+	document.getElementById("contactForm").style.height = "100%";
+}
+
+/* Close */
+function closeContact() {
+		document.getElementById("contactForm").style.width = "0%";
+	}

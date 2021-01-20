@@ -388,8 +388,110 @@ margin-top: 55%;
   color: black;
 }
 
+/* Contact Form Overlay */
+.overlay-contact {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(248, 242, 242, 0.747);
+  background-color: rgba(248, 246, 246, 0.774);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.overlay-form-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.overlay-form-content input {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 25px;
+  padding: 1px;
+}
+.overlay-form-content a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay-form-content .closebtn-contact {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
 
 
+/* Contact Form */
+.overlay-contact{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+form{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #414a6b;
+    margin-left: 28%;
+
+}
+fieldset{
+    border-style: none;
+}
+.form-section{
+    width: 40%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    border-style: none;
+    /* -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px; */
+}
+input{
+    width: 250px;
+    height: 25px;;
+    text-align: left;
+    color: white;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.form-section button{
+    width: 50%;
+    height: 30px;
+    background-color: white;
+    color: purple;
+    margin-top: 10px;
+    outline: none;
+}
+.submit:hover{
+    background-color: darkviolet;
+    color: white;
+}
+.submit:active{
+    background-color: white;
+    color: purple;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  }
 
