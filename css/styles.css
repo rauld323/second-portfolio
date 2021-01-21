@@ -387,7 +387,38 @@ margin-top: 55%;
   text-decoration: none;
   color: black;
 }
-
+.form{
+  height: 100px;
+  background-color: #414a6b;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+.form h1{
+  margin-left: 40%;
+  width: 100%;
+  color: white;
+}
+.form span{
+  margin-left: 45%;
+  width: 100%
+}
+.form button{
+  width: 100px;
+  height: 25px;
+  background-color: white;
+  color: #414a6b;
+  outline: none;
+}
+button:hover{
+    background-color: #414a6b;
+    color: white;
+    border: solid white;
+}
+button:active{
+    background-color: white;
+    color: #414a6b;
+}
 /* Contact Form Overlay */
 .overlay-contact {
   height: 0%;
@@ -407,6 +438,12 @@ margin-top: 55%;
   width: 100%;
   text-align: center;
   margin-top: 10px;
+  justify-content: center;
+}
+.input-sections{
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
 }
 .overlay-form-content input {
   padding: 8px;
@@ -415,6 +452,8 @@ margin-top: 55%;
   color: white;
   display: block;
   transition: 0.3s;
+  justify-content: center;
+  margin-right: 5%
 }
 ::placeholder {
   color: white;
@@ -461,9 +500,6 @@ fieldset{
     justify-content: center;
     flex-flow: row wrap;
     border-style: none;
-    /* -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px; */
 }
 input{
     width: 250px;

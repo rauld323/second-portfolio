@@ -104,6 +104,8 @@ gsap.to('.paralax-info-right ', {
 	y: -150
 })
 
+
+
 // Contact Form Menu
 function openContact() {
 	document.getElementById("contactForm").style.height = "100%";
@@ -113,3 +115,11 @@ function openContact() {
 function closeContact() {
 		document.getElementById("contactForm").style.width = "0%";
 	}
+
+
+window.addEventListener('mouseup', function (event) {
+	let form = document.getElementById('ove');
+	if (event.target !== form && event.target.parentNode !== form) {
+		document.getElementById("contactForm").style.height = "0%";
+	}
+})

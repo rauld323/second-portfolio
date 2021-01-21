@@ -144,32 +144,34 @@
 
 
 			<div id="contactForm" class="overlay-contact">
+				<div>
+					<a href="javascript:void(0)" class="closebtn-contact" onclick="closeContact()">&times;</a>
+				</div>
 
-				<a href="javascript:void(0)" class="closebtn-contact" onclick="closeContact()">X</a>
-
-
-				<!-- Overlay content -->
 				<div class="overlay-form-content">
 					<form action="https://formspree.io/rauldavila323@gmail.com" method="POST" class="form-section">
-						<!-- <input type="hidden" name="_next" value="https://raul-portfolio.firebaseapp.com/index.html" /> -->
-						<div class="input-sections">
+						<div class="input-sections" id="ove">
 							<input type="text" name="name" required placeholder="Name"><br><br>
 							<input type="email" name="email" required placeholder="Email"><br><br>
 							<input style="margin-bottom: 15px;" type="text" required placeholder="Subject">
+							<textarea style="outline: none;" name="textarea" id="" cols="40" rows="10" required placeholder="What's the Beef?"></textarea>
 						</div>
-							<textarea style="outline: none;"
-							name="textarea" id="" cols="40" rows="10" required placeholder="What's the Beef?">
-							</textarea>
+
 						<button class="submit" type="submit" value="submit">Submit</button>
 					</form>
 				</div>
+
 			</div>
 
+			<section class="form">
+				<h1>LETS GET IN CONTACT <em>!</em></h1>
+				<span id="contact">
+					<button onclick="openContact()">Cool</button>
+				</span>
+			</section>
 
 			<!-- Use any element to open/show the overlay navigation menu -->
-			<span id="contact" onclick="openContact()">
-				<button>Cool</button>
-			</span>
+
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 	<script src="node_modules/gsap/dist/gsap.js"></script>
