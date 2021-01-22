@@ -43,8 +43,8 @@ const tl = gsap.timeline({
 		toggleActions: "restart pause reverse pause",
 		stagger: 1
 	}
-
-});
+}
+);
 
 tl
 	.to('.intro-para', { opacity: 0, duration: 0.5})
@@ -103,9 +103,6 @@ gsap.to('.paralax-info-right ', {
 	duration: 3,
 	y: -150
 })
-
-
-
 // Contact Form Menu
 function openContact() {
 	document.getElementById("contactForm").style.height = "100%";
@@ -123,3 +120,28 @@ window.addEventListener('mouseup', function (event) {
 		document.getElementById("contactForm").style.height = "0%";
 	}
 })
+
+// Project Picture Sliding From the Sid
+let parallaxT = gsap.timeline();
+
+parallaxT.from('.parallax', {
+	scrollTrigger: {
+		trigger: '.paralax-container-left',
+		toggleActions: "play play pause pause",
+		scrub: true
+	},
+	duration: 2,
+	x: -100
+}
+)
+
+parallaxT.from('#parallax2', {
+	scrollTrigger: {
+		trigger: '.parallax-section1',
+		toggleActions: "play play pause pause",
+		scrub: true
+	},
+	duration: 2,
+	x: 100
+}
+)
