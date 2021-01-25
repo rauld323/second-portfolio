@@ -20,36 +20,9 @@ window.addEventListener('mouseup', function (event) {
 //Scroll Animations
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".float-intro",{
-	scrollTrigger:{
-		trigger: ".float-intro",
-		start: "350px 70%",
-		end: "+=300px",
-		scrub: true,
-		pin: ".intro",
-		toggleActions: "restart pause reverse pause"
-	},
-		x:280,
-		duration: 3
-})
 
-const tl = gsap.timeline({
 
-	scrollTrigger: {
-		trigger: ".intro-para",
-		start: "70px 100%",
-		end: "+=400px 40%",
-		scrub: true,
-		toggleActions: "restart pause reverse pause",
-		stagger: 1
-	}
-}
-);
 
-tl
-	.to('.intro-para', { opacity: 0, duration: 0.5})
-	.to('.intro-para', { opacity: 1, duration: 0.5}, .5)
-	;
 
 	// ARROWS - START
 gsap.to('.scroll-arrow', {
@@ -135,7 +108,7 @@ parallaxT.from('.parallax', {
 }
 )
 
-parallaxT.from('#parallax2', {
+parallaxT.from('.parallax2', {
 	scrollTrigger: {
 		trigger: '.parallax-section1',
 		toggleActions: "play play pause pause",
@@ -145,3 +118,73 @@ parallaxT.from('#parallax2', {
 	x: 100
 }
 )
+
+ScrollTrigger.matchMedia({
+	"(min-width: 1200px)": function () {
+		gsap.to(".float-intro", {
+			scrollTrigger: {
+				trigger: ".float-intro",
+				start: "350px 70%",
+				end: "+=300px",
+				scrub: true,
+				pin: "#home",
+				toggleActions: "restart pause reverse pause"
+			},
+			x: 280,
+			duration: 3
+		})
+
+		const tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: ".intro-para",
+				start: "70px 100%",
+				end: "+=400px 40%",
+				scrub: true,
+				toggleActions: "restart pause reverse pause",
+				stagger: 2
+			}
+		}
+		);
+
+		tl
+			.to('.intro-para', { opacity: 0, duration: 0.5 })
+			.to('.intro-para', { opacity: 1, duration: 0.5 }, .5)
+			;
+	},
+
+
+	"(max-width: 480px)": function(){
+		gsap.to(".float-intro", {
+			scrollTrigger: {
+				trigger: ".float-intro",
+				start: "50px 50%",
+				end: "+=400px 40%",
+				toggleActions: "restart pause reverse pause",
+				pin:"#home",
+				stagger: 1,
+				scrub: true,
+			},
+			x: 110,
+			duration: 2
+		})
+
+		const tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: ".intro-para",
+				start: "70px 110%",
+				end: "+=350px 40%",
+				scrub: true,
+				toggleActions: "restart pause reverse pause",
+				stagger: 1
+			}
+		}
+		);
+
+		tl
+			.to('.intro-para', { opacity: 0, duration: 0.5 })
+			.to('.intro-para', { opacity: 1, duration: 0.5 }, .5)
+			;
+	}
+}
+)
+

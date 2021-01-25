@@ -48,6 +48,7 @@ body{
 	transform: rotate(180deg);
   text-align: center;
   font-size: 13px;
+  border: solid 1px white;
 }
 
 .overlay {
@@ -127,6 +128,7 @@ margin-top: 55%;
   width: 15%;
   opacity: 50%;
 }
+
 /* MENU - END */
 
 
@@ -222,8 +224,9 @@ margin-top: 55%;
   }
 }
 /* END - Bouncing Arrow */
-.intro{
+#intro{
 	display: flex;
+	flex-flow: row wrap;
 }
 .side1{
 	background-color: #414a6b ;
@@ -237,7 +240,7 @@ margin-top: 55%;
 }
 .float-intro{
 	position: absolute;
-	z-index: 1;
+	z-index: 0;
 	left: 35%;
 	bottom: 20%;
 	font-size: 90px;
@@ -283,6 +286,7 @@ margin-top: 55%;
 	-moz-box-shadow: -16px 3px 25px -6px rgba(0,0,0,0.75);
 	box-shadow: -16px 3px 25px -6px rgba(0,0,0,0.75);
 }
+
 /* Projects Left Side */
 .paralax-container-left{
  width: 100%;
@@ -343,12 +347,11 @@ margin-top: 55%;
  width: 100%;
  display: flex;
  flex-flow: row wrap;
- margin-right: 100px;
+ margin-right: 20px;
 }
 .parallax-section1-right{
   width: 40%;
 }
-
 .paralax-section2-right{
   width: 60%;
   border-right: 40px;
@@ -365,20 +368,7 @@ margin-top: 55%;
   width: 60%;
 
 }
-.parallax {
-  /* The image used */
-  background-image: url("https://images.unsplash.com/photo-1532748963450-28fb1237984b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FuZGVybHVzdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
-  /* Set a specific height */
-  height: 300px;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 80px;
-}
-#parallax2 {
+.parallax2 {
   /* The image used */
   background-image: url("https://images.unsplash.com/photo-1532748963450-28fb1237984b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FuZGVybHVzdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
   /* Set a specific height */
@@ -542,14 +532,16 @@ input{
     background-color: white;
     color: purple;
 }
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+@media screen and (max-width: 480px){
+  .float-intro{
+    font-size: 40px;
+    top: 7%;
+    left: 28%;
+  }
+  .intro-para{
+    font-size: 18px;
+    color: white;
+  }
 
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+}
