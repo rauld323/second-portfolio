@@ -543,5 +543,94 @@ input{
     font-size: 18px;
     color: white;
   }
+  .about-padding{
+    display: flex;
+    margin-left: 60px;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .about-head-1{
+    width: 50%;
+  }
+  .about-head-2{
+    width: 50%;
+  }
+  .tech-content{
+    width: 100%;
+    margin-top: -150px;
+  }
+  /* Project Section */
+  #project1{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 394px;
+  }
 
+  /* First Section Start*/
+  .parallax-section1{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%
+  }
+  .paralax-intro{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    margin-left: -77px;
+  }
+  .paralax-container-left{
+    width: 230px;
+  }
+  .parallax{
+     margin-top: 40px;
+     background-attachment: scroll;
+  }
+  .paralax-section2{
+    width: 100%;
+    margin-top: 70px;
+  }
+  .paralax-info{
+    width: 100%;
+    margin-left: 0;
+  }
+  .paralax-section2 p {
+    width: 100%;
+  }
+  .links{
+    margin-top: 40px;
+  }
+  /* First Section End */
+  /* Second Section Start */
+  .paralax-container-right{
+  width: 230px;
+}
+.paralax-section2-right{
+    width: 100%;
+    margin-top: 125px;
+    order:2
+  }
+  .paralax-info-right{
+    width: 100%;
+    margin-left: 0;
+  }
+.parallax-section2-right{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%
+  }
+  .paralax-section2-right p {
+    width: 100%;
+  }
+.parallax-section1-right{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    order:1
+  }
+  .parallax2{
+     margin-top: 20px;
+     background-attachment: scroll;
+  }
 }

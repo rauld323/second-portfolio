@@ -97,30 +97,33 @@ window.addEventListener('mouseup', function (event) {
 // Project Picture Sliding From the Sid
 let parallaxT = gsap.timeline();
 
-parallaxT.from('.parallax', {
-	scrollTrigger: {
-		trigger: '.paralax-container-left',
-		toggleActions: "play play pause pause",
-		scrub: true
-	},
-	duration: 2,
-	x: -100
-}
-)
 
-parallaxT.from('.parallax2', {
-	scrollTrigger: {
-		trigger: '.parallax-section1',
-		toggleActions: "play play pause pause",
-		scrub: true
-	},
-	duration: 2,
-	x: 100
-}
-)
+
+
 
 ScrollTrigger.matchMedia({
 	"(min-width: 1200px)": function () {
+		parallaxT.from('.parallax', {
+			scrollTrigger: {
+				trigger: '.paralax-container-left',
+				toggleActions: "play play pause pause",
+				scrub: true
+			},
+			duration: 2,
+			x: -100
+		}
+		)
+
+		parallaxT.from('.parallax2', {
+			scrollTrigger: {
+				trigger: '.parallax-section1',
+				toggleActions: "play play pause pause",
+				scrub: true
+			},
+			duration: 2,
+			x: 100
+		}
+		)
 		gsap.to(".float-intro", {
 			scrollTrigger: {
 				trigger: ".float-intro",
@@ -137,7 +140,7 @@ ScrollTrigger.matchMedia({
 		const tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: ".intro-para",
-				start: "70px 100%",
+				start: "90px 100%",
 				end: "+=400px 40%",
 				scrub: true,
 				toggleActions: "restart pause reverse pause",
@@ -154,6 +157,7 @@ ScrollTrigger.matchMedia({
 
 
 	"(max-width: 480px)": function(){
+
 		gsap.to(".float-intro", {
 			scrollTrigger: {
 				trigger: ".float-intro",
@@ -164,14 +168,14 @@ ScrollTrigger.matchMedia({
 				stagger: 1,
 				scrub: true,
 			},
-			x: 110,
+			x: 70,
 			duration: 2
 		})
 
 		const tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: ".intro-para",
-				start: "70px 110%",
+				start: "150px 110%",
 				end: "+=350px 40%",
 				scrub: true,
 				toggleActions: "restart pause reverse pause",
