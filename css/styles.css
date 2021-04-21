@@ -533,6 +533,35 @@ input{
     color: purple;
 }
 
+
+
+
+@media (min-width: 720px) and (max-width: 950px){
+  #about-me{
+    margin-left: 0px;
+    height: 108vh;
+  }
+  .about-padding{
+    margin-left: 78px;
+  }
+  .tech-box{
+    margin-top: 25vh;
+  }
+}
+@media (min-width: 481px)  and (max-width: 719px){
+  .about-padding {
+    padding-top: 100px;
+}
+  .tech-content {
+    width: 75%;
+    margin-left: 13%;
+}
+  .tech-box {
+    margin-top: 0vh;
+  }
+
+
+}
 @media screen and (max-width: 480px){
   .float-intro{
     font-size: 40px;
