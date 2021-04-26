@@ -397,6 +397,7 @@ margin-top: 55%;
   justify-content: center;
   display: flex;
   flex-flow: row wrap;
+  margin-top: 25%;
 }
 .form h1{
   margin-left: 40%;
@@ -536,7 +537,7 @@ input{
 
 
 
-@media (min-width: 720px) and (max-width: 950px){
+@media (min-width: 828px) and (max-width: 950px){
   #about-me{
     margin-left: 0px;
     height: 108vh;
@@ -548,22 +549,67 @@ input{
     margin-top: 25vh;
   }
 }
-@media (min-width: 481px)  and (max-width: 719px){
+@media (min-width: 689px) and (max-width: 827px){
+  #about-me{
+    height: 100%;
+  }
   .about-padding {
     padding-top: 100px;
-}
+    margin-left: 33%;
+  }
   .tech-content {
     width: 75%;
     margin-left: 13%;
+    margin-top: 30%;
 }
   .tech-box {
     margin-top: 0vh;
   }
-
+  #project1{
+    margin-top: 25%;
+  }
+  .paralax-intro{
+    width: 0%;
+  }
+  .paralax-section2-right {
+    width: 50%;
+}
+.paralax-section2-right p {
+    width: 66%;
+}
+.form h1 {
+    margin-left: 32%;
+}
+.form span {
+    margin-left: 40%;
 
 }
-@media screen and (max-width: 480px){
-  .float-intro{
+}
+@media (min-width: 490px) and (max-width: 688px){
+  #about-me{
+    height: 100%;
+  }
+  .tech-box {
+    margin-top: 20vh;
+  }
+  .about-padding {
+    padding-top: 100px;
+    margin-left: 33%;
+  }
+  .tech-content {
+    width: 90%;
+    margin-left: 6%;
+    margin-top: 0%;
+  }
+  #project1 {
+    margin-top: 20%;
+  }
+  .parallax-section1 {
+    width: 82%;
+  }
+
+}
+/* .float-intro{
     font-size: 40px;
     top: 7%;
     left: 28%;
@@ -590,14 +636,14 @@ input{
     margin-top: -150px;
   }
   /* Project Section */
-  #project1{
+  /* #project1{
     display: flex;
     flex-flow: row wrap;
     margin-top: 394px;
-  }
+  } */
 
   /* First Section Start*/
-  .parallax-section1{
+  /* .parallax-section1{
     display: flex;
     flex-flow: row wrap;
     width: 100%
@@ -629,10 +675,10 @@ input{
   }
   .links{
     margin-top: 40px;
-  }
+  } */
   /* First Section End */
   /* Second Section Start */
-  .paralax-container-right{
+  /* .paralax-container-right{
   width: 230px;
 }
 .paralax-section2-right{
@@ -661,5 +707,4 @@ input{
   .parallax2{
      margin-top: 20px;
      background-attachment: scroll;
-  }
-}
+  } */
