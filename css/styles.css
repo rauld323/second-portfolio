@@ -248,7 +248,8 @@ margin-top: 55%;
 .intro-para{
 	margin-top: 200px;
 	text-align: center;
-	font-size: 20px
+  font-size: 20px;
+  color: #f8f8f8;
 }
 
 /* About Me Section */

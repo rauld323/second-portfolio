@@ -22,6 +22,51 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
+gsap.to('.tech-box',{
+	scrollTrigger: {
+		// start: "1000px 10%",
+		// end: "1500px 50%",
+		trigger:'tech-box',
+		toggleActions: "restart pause reverse pause",
+		scrub:true
+	},
+	duration: .5,
+	y: -100
+})
+
+
+
+
+		gsap.to(".float-intro", {
+			scrollTrigger: {
+				trigger: "#intro",
+				scrub: true,
+				pin: "#intro",
+				toggleActions: "restart pause reverse pause"
+			},
+			x: 250,
+			duration: 2
+		})
+
+
+
+
+const tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: ".intro-para",
+				start: "90px 100%",
+				end: "+=400px 40%",
+				scrub: true,
+				toggleActions: "restart pause reverse pause",
+				stagger: 2
+			}
+		}
+		);
+
+		tl
+			.to('.intro-para', { opacity: 0, duration: 0.5 })
+			.to('.intro-para', { opacity: 1, duration: 0.5 }, .5)
+			;
 
 
 // 	// ARROWS - START
@@ -46,17 +91,10 @@ gsap.registerPlugin(ScrollTrigger);
 // })
 // //ARROWS - END
 
-// gsap.to('.tech-box',{
-// 	scrollTrigger: {
-// 		// start: "1000px 10%",
-// 		// end: "1500px 50%",
-// 		trigger:'tech-box',
-// 		toggleActions: "restart pause reverse pause",
-// 		scrub:true
-// 	},
-// 	duration: 1,
-// 	y: -200
-// })
+
+
+
+
 
 // gsap.to('.paralax-info ', {
 // 	scrollTrigger: {
@@ -76,6 +114,11 @@ gsap.registerPlugin(ScrollTrigger);
 // 	duration: 3,
 // 	y: -150
 // })
+
+
+
+
+
 // // Contact Form Menu
 // function openContact() {
 // 	document.getElementById("contactForm").style.height = "100%";
@@ -94,11 +137,14 @@ gsap.registerPlugin(ScrollTrigger);
 // 	}
 // })
 
+
+
+
 // // Project Picture Sliding From the Sid
+
+
+
 // let parallaxT = gsap.timeline();
-
-
-
 
 
 // ScrollTrigger.matchMedia({
@@ -153,8 +199,7 @@ gsap.registerPlugin(ScrollTrigger);
 // 			.to('.intro-para', { opacity: 0, duration: 0.5 })
 // 			.to('.intro-para', { opacity: 1, duration: 0.5 }, .5)
 // 			;
-// 	},
-
+// 	}
 
 // 	"(max-width: 480px)": function(){
 
