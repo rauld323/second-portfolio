@@ -267,7 +267,7 @@ margin-top: 55%;
 	margin-bottom: -40px;
 }
 .about-head-2{
-	margin-top: 140px;
+	margin-top: 90px;
 }
 .about-paragraph{
 	width: 270px;
@@ -318,7 +318,7 @@ margin-top: 55%;
 }
 .parallax {
   /* The image used */
-  background-image: url("https://images.unsplash.com/photo-1532748963450-28fb1237984b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FuZGVybHVzdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+  background-image: url("/img/beach-portfolio.jpg");
   /* Set a specific height */
   height: 300px;
   width: 100%;
@@ -391,6 +391,13 @@ margin-top: 55%;
   text-decoration: none;
   color: black;
 }
+.proj-3 {
+  margin-top: 8%;
+}
+.proj-3 h1{
+  margin-top: 12%;
+}
+
 .form{
   height: 100px;
   background-color: #414a6b;
@@ -573,10 +580,10 @@ input{
   }
   .paralax-section2-right {
     width: 50%;
-}
-.paralax-section2-right p {
+  }
+  .paralax-section2-right p {
     width: 66%;
-}
+  }
 .form h1 {
     margin-left: 32%;
 }
@@ -594,20 +601,63 @@ input{
   }
   .about-padding {
     padding-top: 100px;
-    margin-left: 33%;
+    margin-left: 23%;
+    width: 56%;
   }
   .tech-content {
     width: 90%;
-    margin-left: 6%;
+    margin-left: 10%;
     margin-top: 0%;
   }
   #project1 {
     margin-top: 20%;
   }
+  .paralax-intro{
+    margin-right: 85%;
+  }
   .parallax-section1 {
     width: 82%;
   }
+  .paralax-section2{
+    width: 82%;
+  }
+  .paralax-info{
+    margin-left: 16%;
+  }
+  .paralax-section2 p {
+    margin-top: 17%;
+    width: 100%;
+  }
 
+
+
+  .parallax-section1-right{
+    width: 82%;
+  }
+  .paralax-section2-right {
+    width: 90%;
+    order: 2;
+}
+.paralax-section2-right p {
+    margin-top: 17%;
+    width: 100%;
+  }
+  .parallax2{
+    margin-left: 14%;
+  }
+
+
+
+
+  .form{
+    width: 103%;
+  }
+  .form h1 {
+    margin-left: 27%;
+}
+  .form span {
+    margin-left: 41%;
+}
 }
 /* .float-intro{
     font-size: 40px;
