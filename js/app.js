@@ -24,8 +24,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to('.tech-box',{
 	scrollTrigger: {
-		// start: "1000px 10%",
-		// end: "1500px 50%",
+		start: "1000px 10%",
+		end: "1500px 50%",
 		trigger:'tech-box',
 		toggleActions: "restart pause reverse pause",
 		scrub:true
@@ -69,27 +69,23 @@ const tl = gsap.timeline({
 			;
 
 
-// 	// ARROWS - START
-// gsap.to('.scroll-arrow', {
-// 	scrollTrigger: {
-// 		trigger: '.scroll-arrow',
-// 		toggleActions: "restart pause reverse pause",
-// 		scrub: true
-// 	},
-// 	duration: .5,
-// 	y: 150
-// })
+// Contact Form Menu
+function openContact() {
+	document.getElementById("contactForm").style.height = "100%";
+}
 
-// gsap.to('.other-scroll-arrow', {
-// 	scrollTrigger: {
-// 		trigger: '.other-scroll-arrow',
-// 		toggleActions: "restart pause reverse pause",
-// 		scrub: true
-// 	},
-// 	duration: .3,
-// 	y: -120
-// })
-// //ARROWS - END
+/* Close */
+function closeContact() {
+		document.getElementById("contactForm").style.width = "0%";
+	}
+
+
+window.addEventListener('mouseup', function (event) {
+	let form = document.getElementById('ove');
+	if (event.target !== form && event.target.parentNode !== form) {
+		document.getElementById("contactForm").style.height = "0%";
+	}
+})
 
 
 
@@ -118,24 +114,38 @@ const tl = gsap.timeline({
 
 
 
-
-// // Contact Form Menu
-// function openContact() {
-// 	document.getElementById("contactForm").style.height = "100%";
-// }
-
-// /* Close */
-// function closeContact() {
-// 		document.getElementById("contactForm").style.width = "0%";
-// 	}
-
-
-// window.addEventListener('mouseup', function (event) {
-// 	let form = document.getElementById('ove');
-// 	if (event.target !== form && event.target.parentNode !== form) {
-// 		document.getElementById("contactForm").style.height = "0%";
-// 	}
+// 	// ARROWS - START
+// gsap.to('.scroll-arrow', {
+// 	scrollTrigger: {
+// 		trigger: '.scroll-arrow',
+// 		end: "+=200px 50%",
+// 		toggleActions: "restart pause reverse pause",
+// 		scrub: true
+// 	},
+// 	duration: .5,
+// 	y: 100
 // })
+
+// gsap.to('.other-scroll-arrow', {
+// 	scrollTrigger: {
+// 		trigger: '.other-scroll-arrow',
+// 		toggleActions: "restart pause reverse pause",
+// 		scrub: true
+// 	},
+// 	duration: .3,
+// 	y: -120
+// })
+// //ARROWS - END
+
+
+
+
+
+
+
+
+
+
 
 
 
