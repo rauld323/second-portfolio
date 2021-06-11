@@ -84,8 +84,7 @@ window.addEventListener('mouseup', function(event) {
 	if (
 		event.target !== form &&
 		event.target.parentNode !== form &&
-		event.target.value == null &&
-		event.target.value == ''
+		(event.target.value == null || event.target.value == '')
 	) {
 		document.getElementById('contactForm').style.height = '0%';
 	}
