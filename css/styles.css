@@ -3,6 +3,7 @@
 	padding: 0;
 	border: 0;
 	box-sizing: border-box;
+	list-style: none;
 }
 body {
 	height: 100%;
@@ -263,7 +264,7 @@ body {
 }
 .about-padding {
 	padding-top: 150px;
-	margin-left: 170px;
+	margin-left: 10%;
 	width: 40%;
 }
 .about-head-1 {
@@ -299,12 +300,30 @@ body {
 }
 
 .tech-box-1 {
-	background-color: aqua;
+	background-color: black;
 	width: 50%;
+	color: white;
+	font-size: 1.6rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tech-box-1 li {
+	padding: 0.5rem;
+}
+.tech-box-2 li {
+	padding: 0.5rem;
 }
 .tech-box-2 {
-	background-color: #414a6b;
+	background-color: black;
 	width: 50%;
+	color: white;
+	font-size: 1.6rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Projects Left Side */
@@ -385,28 +404,28 @@ body {
 }
 .parallax2 {
 	/* The image used */
-	background-image: url('https://images.unsplash.com/photo-1532748963450-28fb1237984b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FuZGVybHVzdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+	background-image: url('/img/blog.png');
 	/* Set a specific height */
 	height: 300px;
 	width: 100%;
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
-	background-position: center;
+	background-position: left bottom;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto;
 	margin-top: 80px;
 }
 .parallax3 {
 	/* The image used */
-	background-image: url('https://images.unsplash.com/photo-1532748963450-28fb1237984b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FuZGVybHVzdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+	background-image: url('/img/api.png');
 	/* Set a specific height */
 	height: 300px;
 	width: 100%;
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
-	background-position: center;
+	background-position: left bottom;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto;
 	margin-top: 136px;
 }
 .paralax-info3 {
@@ -523,16 +542,16 @@ button:active {
 	align-content: center;
 }
 #contact button {
-	background-color: #f1f1f1;
+	background-color: white;
 	color: #414a6b;
 	height: 69%;
 	width: 28%;
 }
-#contact button :hover {
+#contact button:hover {
 	background-color: #414a6b;
 	color: #f1f1f1;
 }
-#contact button :active {
+#contact button:active {
 	background-color: #f1f1f1;
 	color: #414a6b;
 }
@@ -603,23 +622,37 @@ textarea::placeholder {
 	}
 	.float-intro {
 		z-index: 0;
-		left: 34%;
+		left: 32%;
+	}
+	.tech-content {
+		width: 45%;
+		margin-left: 29px;
+	}
+	.tech-box-1,
+	.tech-box-2 ul {
+		font-size: 1.2rem;
 	}
 	#about-me {
 		margin-left: 0px;
 		height: 108vh;
 	}
 	.about-padding {
-		margin-left: 78px;
+		margin-left: 50px;
 	}
 	.tech-box {
 		margin-top: 40vh;
 	}
 }
 @media (min-width: 689px) and (max-width: 827px) {
+	.icon-bar a {
+		font-size: 30px;
+	}
+	.intro-para {
+		font-size: 16px;
+	}
 	.float-intro {
 		z-index: 0;
-		left: 32%;
+		left: 30%;
 	}
 	#about-me {
 		height: 100%;
@@ -630,12 +663,14 @@ textarea::placeholder {
 	}
 	.tech-content {
 		width: 75%;
-		margin-left: 13%;
+		margin-left: 18%;
 		margin-top: 30%;
 	}
+
 	.tech-box {
 		margin-top: 0vh;
 	}
+
 	#project1 {
 		margin-top: 25%;
 	}
@@ -659,10 +694,13 @@ textarea::placeholder {
 	}
 }
 @media (min-width: 490px) and (max-width: 688px) {
+	.icon-bar a {
+		font-size: 30px;
+	}
 	.float-intro {
 		position: absolute;
 		z-index: 0;
-		left: 28%;
+		left: 25%;
 		font-size: 70px;
 	}
 	.intro-para {
@@ -673,6 +711,10 @@ textarea::placeholder {
 	}
 	.tech-box {
 		margin-top: 20vh;
+	}
+	.tech-box-1,
+	.tech-box-2 {
+		font-size: 1.5rem;
 	}
 	.about-padding {
 		padding-top: 100px;
@@ -737,6 +779,111 @@ textarea::placeholder {
 	}
 	.form span {
 		margin-left: 41%;
+	}
+
+	/* Onclick Menu */
+	form {
+		margin-left: 15%;
+	}
+
+	.form-section {
+		width: 70%;
+	}
+}
+@media (min-width: 360px) and (max-width: 489px) {
+	#intro {
+		width: 125%;
+	}
+	.icon-bar a {
+		font-size: 30px;
+	}
+	.float-intro {
+		position: absolute;
+		z-index: 0;
+		left: 33%;
+		font-size: 68px;
+		bottom: 30%;
+	}
+	.intro-para {
+		display: none;
+	}
+	#about-me {
+		height: 100%;
+	}
+	.tech-box {
+		margin-top: 20vh;
+		width: 130%;
+	}
+	.tech-box-1,
+	.tech-box-2 {
+		font-size: 1.3rem;
+	}
+	.about-padding {
+		padding-top: 99px;
+		margin-left: 20%;
+		width: 80%;
+	}
+	.tech-content {
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 0%;
+	}
+	#project1 {
+		margin-top: 20%;
+	}
+	.paralax-intro {
+		margin-right: 85%;
+	}
+	.parallax-section1 {
+		width: 82%;
+	}
+	.paralax-section2 {
+		width: 70%;
+	}
+
+	.paralax-info {
+		margin-left: 10%;
+		margin-top: 25%;
+	}
+
+	.paralax-info-right {
+		margin-left: 23%;
+	}
+
+	.paralax-info3 {
+		margin-left: 16%;
+	}
+	.paralax-section2 p {
+		margin-top: 17%;
+		width: 100%;
+	}
+
+	.parallax-section1-right {
+		width: 82%;
+	}
+	.paralax-section2-right {
+		width: 90%;
+		order: 2;
+	}
+	.paralax-section2-right p {
+		margin-top: 17%;
+		width: 100%;
+	}
+	.parallax2 {
+		margin-left: 14%;
+	}
+
+	.form {
+		width: 126%;
+	}
+	.form h1 {
+		margin-left: 20%;
+	}
+	.form span {
+		margin-left: 41%;
+	}
+	#contact button {
+		width: 40%;
 	}
 
 	/* Onclick Menu */
