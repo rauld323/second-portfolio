@@ -642,6 +642,13 @@ textarea::placeholder {
 	.tech-box {
 		margin-top: 40vh;
 	}
+	form {
+		margin-left: 25%;
+	}
+
+	.form-section {
+		width: 50%;
+	}
 }
 @media (min-width: 689px) and (max-width: 827px) {
 	.icon-bar a {
@@ -691,6 +698,12 @@ textarea::placeholder {
 	}
 	.form span {
 		margin-left: 40%;
+	}
+	form {
+		margin-left: 20%;
+	}
+	.form-section {
+		width: 60%;
 	}
 }
 @media (min-width: 490px) and (max-width: 688px) {
